@@ -33,7 +33,9 @@ def read_print_content(File_name):
 
 """
 -> Delete the contents of the file -> 
--> We use import os in Python for file deletion because it provides access to operating system functionalities, allowing us to easily delete files with the os.remove() function and manage file paths efficiently across different platforms.
+-> We use import os in Python for file deletion because it provides access to operating system functionalities, 
+allowing us to easily delete files with the os.remove(),
+function and manage file paths efficiently across different platforms.
 """
 def delete_file(File_Name):
     # To check if the File exists ->
