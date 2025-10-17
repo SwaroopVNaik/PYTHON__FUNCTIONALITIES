@@ -35,7 +35,7 @@ def read_and_print_file_V2(file_path):
     except FileNotFoundError:
         """Error Handling: Implementing measures to handle situations,
         where the file may not be present or accessible."""
-        
+
         print("Error: The File does not exist.")
 
     except PermissionError:
