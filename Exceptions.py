@@ -8,14 +8,18 @@ def read_and_print_file_V1(file_path):
         content = file_handle.read()
 
     except FileNotFoundError:
-        # Error Handling: Implementing measures to handle situations where the file may not be present or accessible.
+        """Error Handling: Implementing measures to handle situations where 
+        the file may not be present or accessible."""
+
         print("Error: The File does not exist.")
 
     except PermissionError:
         print("Error: You do not have permission to access this file.")
 
     finally:
-        # Clean Up: This block of code or instruction will execute no matter what happens, even if there's an error.
+        """Clean Up: This block of code or instruction will execute no matter what happens,
+        even if there's an error."""
+
         print("Clean-Up in progress....!")
         if file_handle is not None:
             file_handle.close()
@@ -29,14 +33,17 @@ def read_and_print_file_V2(file_path):
         content = file_handle.read()
 
     except FileNotFoundError:
-        # Error Handling: Implementing measures to handle situations where the file may not be present or accessible.
+        """Error Handling: Implementing measures to handle situations,
+        where the file may not be present or accessible."""
+        
         print("Error: The File does not exist.")
 
     except PermissionError:
         print("Error: You do not have permission to access this file.")
 
     finally:
-        # Clean Up: This block of code or instruction will execute no matter what happens, even if there's an error.
+        """Clean Up: This block of code or instruction will execute no matter what happens,
+        even if there's an error."""
         print("Clean-Up in progress....!")
         try:
             if file_handle is not None:
