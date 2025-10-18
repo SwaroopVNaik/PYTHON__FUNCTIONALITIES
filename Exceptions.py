@@ -1,4 +1,5 @@
 # Basic Syntax Of Exception Handling in Python
+# Exceptions Helps us to write Really Neat Code
 # Function Definition :-> 👇
 def read_and_print_file_V1(file_path):
     file_handle = None
@@ -51,9 +52,34 @@ def read_and_print_file_V2(file_path):
         except Exception:
             # Swallow_the_Exception
             pass
+#-----------------------------------------------------------------------------------------------------------------------------
+# Custom exception handling for age eligibility in voting
+def check_elegibality_for_voting():
+    try:
+        check_age(16)
+        #check_duplicate(duplicate)
+        #check_address(address)
+        #check_citizenship(document)
+        #check_birthcertificate(document)
+        #Happy Path Code
+        # business Logic 
+        print("Person is eligible for voting")
+    except ValueError as e:
+        print(e)
+
+def check_age(age):
+    if (age < 18):
+        raise ValueError("Age is less then allowed limit")
+    
+    # Happy Path code
+    # more lines of code
+    print("Eligible for the voting ")
 #-------------------------------------------------------------------------------------------------------------------------------------
 # Call/Invoking the function :-> 👇
 read_and_print_file_V1("file-ella.txt") 
 
 # Call/Invoking the function :-> 👇
-read_and_print_file_V2("file-ella.txt") 
+read_and_print_file_V2("file-ella.txt")
+
+# Call/Invoking the function :-> 👇 (Custom Exception Handling Function Call)
+check_elegibality_for_voting()
